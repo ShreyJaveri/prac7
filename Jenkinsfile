@@ -13,7 +13,7 @@ pipeline {
     }
     stage('DEPLOY TO PROD') {
       steps {
-        bat '''xcopy index.html C:\\apache-tomcat-11.0.18\\webapps\\ROOT /E /I /Y'''
+        bat '''xcopy add.html C:\\apache-tomcat-11.0.18\\webapps\\ROOT /E /I /Y'''
       }
     }
   }
